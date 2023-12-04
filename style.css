@@ -1,0 +1,975 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: all .2s linear ;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background-color: #e2e2e2;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 2rem 9%;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: .2px .2px 10px;
+    z-index: 100;
+
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header .logo i{
+    font-size: 2.9rem;
+    margin: .5rem;
+    /* margin-right: .2%; */
+    color: green;
+}
+
+.header .navbar a{
+    color: rgb(53, 53, 53);
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    text-transform: uppercase;
+}
+
+.header .navbar a:hover{
+    color: green;
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.header .icons div{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: .2px;
+    background-color: #e2e2e2;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.header .icons div:hover{
+    background-color: green;
+    color: white;
+    /* height: 3.1rem; */
+    /* width: 3.1rem; */
+    font-size: 1.5rem;
+    line-height: 3.2rem;
+}
+
+.header .search {
+    /* border: solid black; */
+    position: absolute;
+    top: 110%;
+    right: 1rem;
+    height: 4rem;
+    width: 50rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    display: none;
+    
+}
+
+.header .search label{
+    font-size: 1.5rem ;
+    padding: 0px 5px;
+    line-height: 1.5rem;
+    color: rgb(53, 53, 53);
+    cursor: pointer;
+}
+
+.header .search label:hover{
+    color: green;
+}
+
+.header .search input{
+    height: 4rem;
+    width: 51rem;
+    border: none;
+    /* padding: 0 5px; */
+    outline: none;
+}
+
+#home {
+    padding: 20rem 9% 20rem 15%;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end; /* Change this line */
+    background-image: url(./images/online-fashion-shopping-with-laptop-removebg.webp);
+    background-position: bottom left;
+    background-size: 42%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+#home .content{
+    width: 70%;
+    font-size: 1.5rem;
+}
+#home .content span{
+    color: green;
+}
+
+#home .content button{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    margin-top: 2rem;
+    height:35%;
+    width: 12rem;
+    line-height: 55%;
+}
+
+#home .content button:hover{
+    background-color:#e2e2e2;
+    color: black;
+    scale: 1.1;
+
+}
+
+.heading{
+    text-align: center;
+    padding: 2rem 0 3rem 0;
+    font-size: 3rem;
+    color: white;
+    padding: .6rem;
+    margin: .5%;
+    margin-top: 3vh;
+}
+
+.heading #one{
+    background-color: white;
+    border-radius: 5px;
+    color: green;
+    padding: .6rem;
+}
+
+.heading #two{
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    padding: .6rem;
+}
+
+.boxcontainer{
+    margin-top: 2vh;
+    margin-left: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: baseline;
+    background-color: green;
+    width: 90vw;
+    border-radius: .5%;
+}
+
+.box{
+    border: .1px solid rgb(209, 209, 209);
+    padding: 1.4%;
+    margin: 1.1%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 2%;
+    box-shadow: .2px .2px 10px;
+}
+
+.box:hover{
+    scale: 1.05;
+    cursor: pointer;
+    
+}
+
+.box h3{
+    margin-top: 4%;
+}
+
+#box1{
+    width: 19.8vw;
+    height: 28vh;
+    background-image: url(./images/shirt-mockup-concept-with-plain-clothing.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#box2{
+    width: 19.8vw;
+    height: 28vh;
+    background-image: url(./images/still-life-care-products.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#box3{
+    width: 19.8vw;
+    height: 28vh;
+    background-image: url(./images/stylish-scandinavian-living-room-with-design-mint-sofa-furnitures-mock-up-poster-map-plants-eleg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#box4{
+    width: 19.8vw;
+    height: 28vh;
+    background-image: url(./images/new.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#box5{
+    width: 19.8vw;
+    height: 28vh;
+    background-image: url(./images/sports-tools.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#box6{
+    width: 19.8vw;
+    height: 28vh;
+    background-image: url(./images/fluffy-toy-texture-close-up.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fboxcontainer{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: baseline;
+    /* background-color: green; */
+}
+
+.fbox{
+    border: .1px solid rgb(209, 209, 209);
+    padding: 1.4%;
+    margin: 1.1%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 2%;
+    box-shadow: .2px .2px 10px;
+}
+
+.fbox button{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    margin-top: .5rem;
+    padding: 3%;
+}
+.fbox button:hover{
+        background-color:#e2e2e2;
+        color: black;
+        scale: 1.1;
+}
+
+#fbox1{
+    width: 19.8vw;
+    height: 28vh;
+    margin-bottom: 1%;
+    background-image: url(./images/click.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#fbox2{
+    width: 19.8vw;
+    height: 28vh;
+    margin-bottom: 1%;
+    background-image: url(./images/local-market-people-shopping-healthy-fresh-food-vegetables-fruit-meat-grocery-stores-organic-products-background_80590-9468.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#fbox3{
+    width: 19.8vw;
+    height: 28vh;
+    margin-bottom: 1%;
+    background-image: url(./images/offers.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#fbox4{
+    width: 19.8vw;
+    height: 28vh;
+    margin-bottom: 1%;
+    background-image: url(./images/secure\ payment.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#fbox5{
+    width: 19.8vw;
+    height: 28vh;
+    margin-bottom: 1%;
+    background-image: url(./images/Online_Shoping_29.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#fbox6{
+    width: 19.8vw;
+    height: 28vh;
+    margin-bottom: 1%;
+    background-image: url(./images/saving.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.r_boxcontainer{
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    margin-bottom: 20vh;
+}
+
+.rbox{
+    border: 1px solid black;
+    text-align: center;
+    padding: 1%;
+    width: 15vw;
+    height: 30vh;
+    background-color: rgb(253, 253, 253);
+    padding: 1.4%;
+    margin: 1.1%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 2%;
+    box-shadow: .2px .2px 10px;
+}
+
+.rbox i{
+    color: gold;
+    font-size: 1.5rem;
+}
+
+.rbox h4 , .rbox p{
+    font-size: 1.3rem;
+    margin: 1vh;
+    padding-bottom: 1%;
+}
+
+#rbox1{
+    height: 13vh;
+    width: 13vh;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-image: url(./images/pic1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    left:4.3vw;
+}
+
+#rbox2{
+    height: 13vh;
+    width: 13vh;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-image: url(./images/pic2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    left:4.3vw;
+}
+
+#rbox3{
+    height: 13vh;
+    width: 13vh;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-image: url(./images/pic3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    left:4.3vw;
+}
+
+#rbox4{
+    height: 13vh;
+    width: 13vh;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-image: url(./images/pic4.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top ;
+    position: relative;
+    left:4.3vw;
+}
+
+#rbox5{
+    height: 13vh;
+    width: 13vh;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-image: url(./images/pic5.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    left:4.3vw;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+footer{
+    background-color:darkgreen;
+    padding: 5vh 0px;
+}
+
+.footboxcontainer{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+    color: white;
+}
+
+.footbox1 , .footbox2, .footbox3{
+    font-size: 1.8em;
+    width: 12em;
+    text-align: center;
+}
+
+.footbox1 h3 , .footbox2 h3, .footbox3 h3{
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.share a{
+    color: white;
+    font-size: 1.3em;
+}
+
+#last{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 5vh;
+    color: antiquewhite;
+    border-top: 2px solid white;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    line-height: 10px;
+}
+.n{
+    color:antiquewhite;
+}*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: all .2s linear ;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background-color: #e2e2e2;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 2rem 9%;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: .2px .2px 10px;
+    z-index: 100;
+
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header .logo i{
+    font-size: 2.9rem;
+    margin: .5rem;
+    /* margin-right: .2%; */
+    color: green;
+}
+
+.header .navbar a{
+    color: rgb(53, 53, 53);
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    text-transform: uppercase;
+}
+
+.header .navbar a:hover{
+    color: green;
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.header .icons div{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: .2px;
+    background-color: #e2e2e2;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.header .icons div:hover{
+    background-color: green;
+    color: white;
+    /* height: 3.1rem; */
+    /* width: 3.1rem; */
+    font-size: 1.5rem;
+    line-height: 3.2rem;
+}
+
+.header .search {
+    /* border: solid black; */
+    position: absolute;
+    top: 110%;
+    right: 1rem;
+    height: 4rem;
+    width: 50rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    display: none;
+    
+}
+
+.header .search label{
+    font-size: 1.5rem ;
+    padding: 0px 5px;
+    line-height: 1.5rem;
+    color: rgb(53, 53, 53);
+    cursor: pointer;
+}
+
+.header .search label:hover{
+    color: green;
+}
+
+.header .search input{
+    height: 4rem;
+    width: 51rem;
+    border: none;
+    /* padding: 0 5px; */
+    outline: none;
+}
+
+#home {
+    padding: 20rem 9% 20rem 15%;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end; /* Change this line */
+    background-image: url(./images/online-fashion-shopping-with-laptop-removebg.webp);
+    background-position: bottom left;
+    background-size: 42%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+#home .content{
+    width: 70%;
+    font-size: 1.5rem;
+}
+#home .content span{
+    color: green;
+}
+
+#home .content button{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    margin-top: 2rem;
+    height:35%;
+    width: 12rem;
+    line-height: 55%;
+}
+
+#home .content button:hover{
+    background-color:#e2e2e2;
+    color: black;
+    scale: 1.1;
+
+}
+
+.heading{
+    text-align: center;
+    padding: 2rem 0 3rem 0;
+    font-size: 3rem;
+    color: white;
+    padding: .6rem;
+    margin: .5%;
+    margin-top: 3vh;
+}
+
+.heading #one{
+    background-color: white;
+    border-radius: 5px;
+    color: green;
+    padding: .6rem;
+}
+
+.heading #two{
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    padding: .6rem;
+}
+
+.boxcontainer{
+    margin-top: 2vh;
+    margin-left: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: baseline;
+    background-color: green;
+    width: 90vw;
+    border-radius: .5%;
+}
+
+.box{
+    border: .1px solid rgb(209, 209, 209);
+    padding: 1.4%;
+    margin: 1.1%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 2%;
+    box-shadow: .2px .2px 10px;
+}
+
+.box:hover{
+    scale: 1.05;
+    cursor: pointer;
+    
+}
+
+.box h3{
+    margin-top: 4%;
+}
+
+#box1{
+    width: 19.8vw;
+    height: 28vh;
+    background-image: url(./images/shirt-mockup-concept-with-plain-clothing.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#box2{
+    width: 19.8vw;
+    height: 28vh;
+    background-image: url(./images/still-life-care-products.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#box3{
+    width: 19.8vw;
+    height: 28vh;
+    background-image: url(./images/stylish-scandinavian-living-room-with-design-mint-sofa-furnitures-mock-up-poster-map-plants-eleg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#box4{
+    width: 19.8vw;
+    height: 28vh;
+    background-image: url(./images/new.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#box5{
+    width: 19.8vw;
+    height: 28vh;
+    background-image: url(./images/sports-tools.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#box6{
+    width: 19.8vw;
+    height: 28vh;
+    background-image: url(./images/fluffy-toy-texture-close-up.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fboxcontainer{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: baseline;
+    /* background-color: green; */
+}
+
+.fbox{
+    border: .1px solid rgb(209, 209, 209);
+    padding: 1.4%;
+    margin: 1.1%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 2%;
+    box-shadow: .2px .2px 10px;
+}
+
+.fbox button{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    margin-top: .5rem;
+    padding: 3%;
+}
+.fbox button:hover{
+        background-color:#e2e2e2;
+        color: black;
+        scale: 1.1;
+}
+
+#fbox1{
+    width: 19.8vw;
+    height: 28vh;
+    margin-bottom: 1%;
+    background-image: url(./images/click.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#fbox2{
+    width: 19.8vw;
+    height: 28vh;
+    margin-bottom: 1%;
+    background-image: url(./images/local-market-people-shopping-healthy-fresh-food-vegetables-fruit-meat-grocery-stores-organic-products-background_80590-9468.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#fbox3{
+    width: 19.8vw;
+    height: 28vh;
+    margin-bottom: 1%;
+    background-image: url(./images/offers.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#fbox4{
+    width: 19.8vw;
+    height: 28vh;
+    margin-bottom: 1%;
+    background-image: url(./images/secure\ payment.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#fbox5{
+    width: 19.8vw;
+    height: 28vh;
+    margin-bottom: 1%;
+    background-image: url(./images/Online_Shoping_29.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#fbox6{
+    width: 19.8vw;
+    height: 28vh;
+    margin-bottom: 1%;
+    background-image: url(./images/saving.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.r_boxcontainer{
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    margin-bottom: 20vh;
+}
+
+.rbox{
+    border: 1px solid black;
+    text-align: center;
+    padding: 1%;
+    width: 15vw;
+    height: 30vh;
+    background-color: rgb(253, 253, 253);
+    padding: 1.4%;
+    margin: 1.1%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 2%;
+    box-shadow: .2px .2px 10px;
+}
+
+.rbox i{
+    color: gold;
+    font-size: 1.5rem;
+}
+
+.rbox h4 , .rbox p{
+    font-size: 1.3rem;
+    margin: 1vh;
+    padding-bottom: 1%;
+}
+
+#rbox1{
+    height: 13vh;
+    width: 13vh;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-image: url(./images/pic1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    left:4.3vw;
+}
+
+#rbox2{
+    height: 13vh;
+    width: 13vh;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-image: url(./images/pic2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    left:4.3vw;
+}
+
+#rbox3{
+    height: 13vh;
+    width: 13vh;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-image: url(./images/pic3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    left:4.3vw;
+}
+
+#rbox4{
+    height: 13vh;
+    width: 13vh;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-image: url(./images/pic4.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top ;
+    position: relative;
+    left:4.3vw;
+}
+
+#rbox5{
+    height: 13vh;
+    width: 13vh;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-image: url(./images/pic5.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    left:4.3vw;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+footer{
+    background-color:darkgreen;
+    padding: 5vh 0px;
+}
+
+.footboxcontainer{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+    color: white;
+}
+
+.footbox1 , .footbox2, .footbox3{
+    font-size: 1.8em;
+    width: 12em;
+    text-align: center;
+}
+
+.footbox1 h3 , .footbox2 h3, .footbox3 h3{
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.share a{
+    color: white;
+    font-size: 1.3em;
+}
+
+#last{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 5vh;
+    color: antiquewhite;
+    border-top: 2px solid white;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    line-height: 10px;
+}
+.n{
+    color:antiquewhite;
+}
